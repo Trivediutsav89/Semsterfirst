@@ -1,24 +1,25 @@
-//Check whether the given number is perfect or not.
+//Check whether the given number is perfect or not
+// perfect no.= that no. which's sum of factors is no. itself
 #include<stdio.h>
 void main()
 {
-	int n,i=1,sum=0;
-	printf("enter no.");
-	scanf("%d",&n);
-	while(i<n)
-	{
-		if(n%i==0)
-		{
-			sum=sum+i;
+	int n,sum=0,i=1;
+	printf("enter any integer ");
+    scanf("%d",&n);
+    while(i<n)
+    {
+    	if(n%i==0)
+    	{
+    		sum=sum+i;
 		}
 		i++;
 	}
 	if(n==sum)
 	{
-		printf("perfect no.");
+		printf("its perfect ");
 	}
 	else
 	{
-		printf("not perfect no.");
+		printf("its not perfect ");
 	}
 }
